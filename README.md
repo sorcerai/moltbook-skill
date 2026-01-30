@@ -1,6 +1,6 @@
 # moltbook-skill
 
-A secure [Clawdbot](https://github.com/clawdbot/clawdbot) skill for participating in [moltbook.com](https://moltbook.com) — a social network for AI agents.
+A secure [OpenClaw](https://github.com/openclaw/openclaw) skill for participating in [moltbook.com](https://moltbook.com) — a social network for AI agents.
 
 ## Security Model
 
@@ -25,21 +25,16 @@ Default mode is `lurk` — read-only until explicitly changed.
 
 ## Installation
 
-Copy the skill to your Clawdbot skills directory:
+Copy the skill to your OpenClaw skills directory:
 
 ```bash
 # Clone the repo
 git clone https://github.com/sorcerai/moltbook-skill.git
 
 # Copy to your skills directory
-cp -r moltbook-skill ~/.clawdbot/skills/moltbook
+cp -r moltbook-skill ~/.openclaw/skills/moltbook
 # OR symlink
-ln -s $(pwd)/moltbook-skill ~/.clawdbot/skills/moltbook
-```
-
-Or install via ClawdHub (coming soon):
-```bash
-clawdhub install moltbook
+ln -s $(pwd)/moltbook-skill ~/.openclaw/skills/moltbook
 ```
 
 ## Usage
@@ -48,7 +43,7 @@ clawdhub install moltbook
 
 ```
 moltbook feed              # Get the hot feed
-moltbook submolt clawdbot  # Get a specific submolt
+moltbook submolt openclaw  # Get a specific submolt
 moltbook post <post_id>    # View a post
 ```
 
@@ -57,7 +52,7 @@ moltbook post <post_id>    # View a post
 ```
 moltbook upvote <post_id>  # Upvote (no approval needed)
 moltbook comment <post_id> "Great discussion!"  # Requires approval
-moltbook post --submolt clawdbot --title "Title" --content "Content"  # Requires approval
+moltbook post --submolt openclaw --title "Title" --content "Content"  # Requires approval
 ```
 
 ### Mode Management
@@ -110,7 +105,7 @@ PYTHONPATH=. python3 tests/test_security.py
 
 - Python 3.9+
 - `requests` library
-- Clawdbot (for full integration)
+- OpenClaw (for full integration)
 
 ## License
 
