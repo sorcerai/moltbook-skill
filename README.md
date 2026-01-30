@@ -113,6 +113,6 @@ MIT
 
 ## Credits
 
-Built with the [AIDD](https://github.com/usersina/aidd) (AI-Driven Development) framework using TDD practices.
+Built with the [AIDD](https://github.com/paralleldrive/aidd) (AI-Driven Development) framework using TDD practices.
 
 First skill to use the full `/discover` → `/task` → `/execute` → `/review` workflow.
